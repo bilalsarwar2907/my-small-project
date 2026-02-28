@@ -1,41 +1,74 @@
-/* Simple navigation bar */
-.navbar {
-    background: #333;
-    padding: 10px;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-.navbar .active {
-    color: #00d4ff;
-}
-
-/* Page container */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* ----------------------------------------------------
+   GLOBAL PAGE BACKGROUND
+   A soft light‑green background to give the site a fresh,
+   clean, and modern look without being too strong.
+----------------------------------------------------- */
+body {
+    background-color: #e8f5e9; /* very light green */
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
-.card {
-    border-radius: 12px;
+
+
+/* ----------------------------------------------------
+   NAVIGATION BAR CUSTOMIZATION
+   These styles override Bootstrap defaults to add
+   green accents and improve readability.
+----------------------------------------------------- */
+
+/* Highlight the active page link in the navbar */
+.nav-link.active {
+    color: #8bc34a !important; /* medium green */
+    font-weight: bold;
 }
 
+/* Slight green tint for the site title */
 .navbar-brand {
+    color: #aed581 !important; /* soft green */
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* ----------------------------------------------------
+   MAIN CONTENT CONTAINER
+   Adds spacing and ensures content is centered nicely.
+----------------------------------------------------- */
+.container {
+    margin-top: 40px;
+}
+
+
+
+/* ----------------------------------------------------
+   CARD STYLING
+   Light‑green background and soft border to match theme.
+----------------------------------------------------- */
+.card {
+    background-color: #f1fdf3; /* pale green */
+    border: 1px solid #c8e6c9; /* soft green border */
+    border-radius: 10px;
+}
+
+
+
+/* ----------------------------------------------------
+   GRID BOXES (Box 1, Box 2, Box 3)
+   Light background and border for consistency.
+----------------------------------------------------- */
+.border {
+    background-color: #f1fdf3; /* pale green */
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+}
+
+
+
+/* ----------------------------------------------------
+   HEADINGS
+   Slightly darker green for visual hierarchy.
+----------------------------------------------------- */
+h1, h2, h3 {
+    color: #4caf50; /* medium green */
 }
